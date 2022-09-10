@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Examen1</string>
+    <string-array name="arte">
+        <item>cocina</item>
+        <item>filmadora</item>
+        <item>horno</item>
+        <item>licuadora</item>
+        <item>radio</item>
+        <item>refrigeradora</item>
+        <item>televisor</item>
+    </string-array>
+</resources>

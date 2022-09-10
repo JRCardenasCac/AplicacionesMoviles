@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtSeleccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SELECCIONE ARTEFACTO" />
+
+        <Spinner
+            android:id="@+id/cmbArtefactos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/arte"
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            app:srcCompat="@drawable/cocina" />
+
+        <TextView
+            android:id="@+id/txtPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:text="Precio del artefacto" />
+
+        <RadioGroup
+            android:id="@+id/rgpCuotas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:id="@+id/cuota6m"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6 Meses" />
+
+            <RadioButton
+                android:id="@+id/cuota12m"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12 Meses" />
+
+            <RadioButton
+                android:id="@+id/cuota18m"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18 Meses" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnVerProforma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="calcular"
+            android:text="Ver Proforma" />
+    </LinearLayout>
+
+</ScrollView>
